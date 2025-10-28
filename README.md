@@ -73,11 +73,14 @@ notepad C:\SOC_System_Report.ps1
 <img width="540" height="115" alt="image" src="https://github.com/user-attachments/assets/ab758a3d-2428-4db2-8ab7-c045d54babe0" />
 
 
-That means your script successfully:
+That means the script successfully
 
 Grabbed system info
+
 Logged network connections
+
 Pulled security event logs
+
 Wrote it all into a timestamped report file
 
 
