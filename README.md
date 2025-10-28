@@ -74,9 +74,10 @@ notepad C:\SOC_System_Report.ps1
 
 
 That means your script successfully:
-	• Grabbed system info
-	• Logged network connections
-	• Pulled security event logs
+
+Grabbed system info
+Logged network connections
+Pulled security event logs
 Wrote it all into a timestamped report file
 
 
