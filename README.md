@@ -75,10 +75,13 @@ notepad C:\SOC_System_Report.ps1
 
 That means the script successfully
 
-Grabbed system info
-Logged network connections
-Pulled security event logs
-Wrote it all into a timestamped report file
+-Grabbed system info
+
+-Logged network connections
+
+-Pulled security event logs
+
+-Wrote it all into a timestamped report file
 
 
 Now to read it I will run
