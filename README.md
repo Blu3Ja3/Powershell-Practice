@@ -5,7 +5,6 @@ Practicing Powershell Automations
 Working in powershell today on my Windows VM
 
 
-first im going to 
 # 1) Confirm current user & elevation
 
 
@@ -23,7 +22,7 @@ Get-ComputerInfo | Select-Object CsName, WindowsVersion, OsBuildNumber
 
 <img width="645" height="83" alt="image" src="https://github.com/user-attachments/assets/587853be-61bd-436a-ae6c-5987817461de" />
 
-###IP Configuration###
+###IP Configuration
 
 During an incident investigation, a SOC or incident response role, I might be looking at suspicious network logs or alerts in SIEM tools.
 
@@ -50,4 +49,54 @@ Get-NetTCPConnection | Select-Object LocalAddress, LocalPort, RemoteAddress, Rem
 ```
 
 
-### Automation ###
+### Automation 
+
+```bash
+notepad C:\SOC_System_Report.ps1
+```
+
+
+<img width="748" height="499" alt="image" src="https://github.com/user-attachments/assets/bc61623c-51cb-4f42-8c13-013e127ad4a9" />
+
+I wrote the follwoing 
+
+<img width="801" height="611" alt="image" src="https://github.com/user-attachments/assets/5a8e1a46-9dbb-42f6-9635-b4d14d5d026b" />
+
+Closed and saved the notepad
+
+Ran 
+
+```bash
+notepad C:\SOC_System_Report.ps1
+```
+
+<img width="540" height="115" alt="image" src="https://github.com/user-attachments/assets/ab758a3d-2428-4db2-8ab7-c045d54babe0" />
+
+
+That means your script successfully:
+	• Grabbed system info
+	• Logged network connections
+	• Pulled security event logs
+Wrote it all into a timestamped report file
+
+
+Now to read it I will run
+
+```bash 
+notepad C:\SOC_Report_20251028_155431.txt 
+```
+
+
+<img width="603" height="432" alt="image" src="https://github.com/user-attachments/assets/f601f400-6be3-4b96-b528-3a034579223b" />
+
+
+And this it shows me what we asked!
+
+
+### Why did I do this?
+
+In SOC and forensics work, you usually don’t want info scrolling by — you want a clean log or report you can attach to a ticket or case.
+So we automate data collection into a file (timestamped for evidence).
+
+
+
